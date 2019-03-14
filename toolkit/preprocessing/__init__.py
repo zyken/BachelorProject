@@ -67,7 +67,7 @@ def otsu_and_edge_seg(img):
 
     mask = edge_img.copy()
     mask[mask > 0] = 0
-    cv2.fillPoly(mask, significant, 255)
+    cv2.fillPoly(mask, significant, 1)
     mask = np.logical_not(mask)
     img_otsu[mask] = 0
 
