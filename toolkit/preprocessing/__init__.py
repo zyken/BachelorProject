@@ -22,7 +22,7 @@ def otsu_seg(img):
     return img_seg
 
 def otsu_and_edge_seg(img):
-    def edgedetect (channel): # RGB/gray channel
+    def edgedetect (channel): # RGB channel
         sobelX = cv2.Sobel(channel, cv2.CV_16S, 1, 0)
         sobelY = cv2.Sobel(channel, cv2.CV_16S, 0, 1)
         sobel = np.hypot(sobelX, sobelY)
@@ -53,7 +53,6 @@ def otsu_and_edge_seg(img):
             if area > tooSmall and tooBig > area:
                 significant.append([contour, area])
 
-        significant.sort(key=lambda x: x[1])
         return [x[0] for x in significant]
 
     img_otsu = otsu_seg(img)
