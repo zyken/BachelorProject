@@ -1,0 +1,530 @@
+QWidget {
+    background: #2e2e2e;
+    color: #dddddd;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    /*TODO LH Can we include Avenir or some other good font?*/
+    /*font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+QDialog {
+    background: #4c4c4c;
+}
+
+QDialog QWidget {
+    background: #4c4c4c;
+}
+
+QDialog QPushButton {
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 8px 36px;
+    border-radius: 12px;
+    margin-left: 6px;
+    background: #5b5b5b;
+}
+
+QAbstractItemView {
+    border: 1px solid black;
+    background: #8f8e93;
+}
+
+QGraphicsView {
+    border: 1px solid black;
+    background: #8f8e93;
+}
+
+QLabel {
+    border: 0;
+}
+
+QCheckBox, QRadioButton {
+    border: 0;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    border: 2px solid #3a3939;
+    background: #dddddd;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    margin-right: 4px;
+}
+
+QRadioButton::indicator {
+    border-radius: 6px;
+}
+
+QCheckBox::indicator:hover, QRadioButton::indicator:hover {
+    background: white;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background: #aa66cc;
+}
+
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled {
+    background: #3e3e3e;
+}
+
+QStatusBar {
+    border: none;
+    border-top: 1px solid #5a5a5a;
+}
+
+QStatusBar QWidget {
+    border: none;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+QStatusBar > QLabel {
+    border-left: 2px solid #5A5A5A;
+}
+
+QScrollBar {
+    border: None;
+    background: #191919;
+}
+
+QScrollBar:horizontal {
+    height: 15px;
+    margin: 0;
+}
+
+QScrollBar:vertical {
+    width: 15px;
+    margin: 32px 0 0 0;
+}
+
+QScrollBar::handle {
+    background: #353535;
+    border: 1px solid #5A5A5A;
+}
+
+QScrollBar::handle:horizontal {
+    border-width: 0 1px 0 1px;
+}
+
+QScrollBar::handle:vertical {
+    border-width: 1px 0 1px 0;
+}
+
+QScrollBar::handle:horizontal {
+    min-width: 20;
+}
+
+QScrollBar::handle:vertical {
+    min-height: 20;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background:#353535;
+    border: 1px solid #5A5A5A;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line {
+    position: absolute;
+}
+
+QScrollBar::add-line:horizontal {
+    width: 15px;
+    subcontrol-position: left;
+    left: 15px;
+}
+
+QScrollBar::add-line:vertical {
+    height: 15px;
+    subcontrol-position: top;
+    top: 15px;
+}
+
+QScrollBar::sub-line:horizontal {
+    width: 15px;
+    subcontrol-position: top left;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 15px;
+    subcontrol-position: top;
+}
+
+QScrollBar:left-arrow, QScrollBar::right-arrow,
+QScrollBar::up-arrow, QScrollBar::down-arrow {
+    border: 1px solid #5A5A5A;
+    width: 3px;
+    height: 3px;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: 0;
+}
+
+QComboBox:selected {
+    color: white;
+    background: #5b5b5b;
+}
+
+QComboBox::down-arrow {
+    border: 1px solid #5A5A5A;
+    background: #353535;
+}
+
+QComboBox::drop-down {
+    border: 1px solid #5A5A5A;
+    background: #353535;
+}
+
+QComboBox::down-arrow {
+    width: 3px;
+    height: 3px;
+    border: 1px solid #5A5A5A;
+}
+
+/* No image for splitter handle */
+QSplitter::handle:horizontal {
+    image: none;
+    background: #202020;
+}
+
+/* Taken from https://bugreports.qt.io/browse/QTBUG-13768 */
+QSplitterHandle:hover {
+}
+
+QSplitter::handle:horizontal:hover {
+    background: #5b5b5b;
+}
+
+QProgressBar {
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    width: 1px;
+    background: #aa66cc;
+}
+
+QSlider {
+    border: 0;
+    margin: 2px;
+}
+
+QSlider::handle:horizontal {
+    width: 10px;
+    background: #dddddd;
+    border-radius: 3px;
+    /* -ve vertical margins to get handle to protude beyond groove */
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: white;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #aaaaaa;
+}
+
+QSlider::groove:horizontal {
+    background: #4a4a4a;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QPushButton {
+    font-size: 13pt;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
+    background: #5b5b5b;
+}
+
+/* No drop-down menu item */
+QPushButton::menu-indicator {
+    image: "";
+}
+
+QPushButton:hover {
+    color: white;
+    background: #7c7c7c;
+}
+
+QPushButton:default {
+    color: white;
+    background: #aa66cc;
+    border: white;
+}
+
+QMenu {
+    background: #4f4f4f;
+}
+
+QMenu::item {
+    /* top right bottom left */
+    padding: 4px 6px 4px 24px;
+    border: 1px solid rgba(0, 0, 0, 0);    /* Space for selection box */
+}
+
+QMenu::icon {
+    margin-left: 4px;    /* So that icons do not touching left of menu */
+}
+
+QMenu::item:selected {
+    color: white;
+    background: rgba(170, 102, 204, 88);
+    border: 1px solid #3b034c;
+    border-radius: 3px;
+}
+
+QMenu::item:checked {
+    color: white;
+    background: rgba(170, 102, 204, 88);
+    border: 1px solid #3b034c;
+    border-radius: 3px;
+}
+
+QMenu::item::disabled {
+    color: gray;
+    background: #4f4f4f;
+}
+
+/* To get menu bar appearing correctly on Windows
+See https://bugreports.qt.io/browse/QTBUG-49115
+*/
+QMenuBar, QMenuBar::item {
+    background: transparent;
+}
+
+QMenuBar {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #dddddd;
+}
+
+QToolBar {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    spacing: 0;
+}
+
+QToolBar::separator {
+    background: #666666;
+    width: 1px;
+}
+
+QToolBar QToolButton {
+    font-size: 11px;
+    border: 0;
+    height: 26px;
+    qproperty-iconSize: 20px;
+}
+
+QToolBar QLabel {
+    font-size: 10px;
+    qproperty-alignment: 'AlignBottom | AlignHCenter';
+}
+
+QToolBar QToolButton:checked {
+    color: white;
+    background-color: #5b5b5b;
+}
+
+QToolBar QToolButton:hover {
+    color: white;
+    background-color: #5b5b5b;
+}
+
+QToolBar QToolButton:disabled {
+    color: #aaaaaa;
+}
+
+QToolBar QToolButton::menu-indicator {
+    image: "";
+}
+
+/* Custom widgets */
+SideBar {
+    padding: 0 2px;
+    border: none;
+}
+
+ToggleWidgetLabel {
+    margin: 0;
+    padding: 4px 2px;
+}
+
+ToggleWidgetLabel QLabel {
+    font-size: 13pt;
+    text-decoration: 0;
+}
+
+ToggleWidgetLabel QLabel:hover {
+    color: white;
+}
+
+PopupPanel {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+PanelContainer {
+    background: #4f4f4f;
+    padding: -10px;
+    margin: 2;
+    border-radius: 2px;
+}
+
+PanelContainer QWidget {
+    background: #4f4f4f;
+}
+
+PanelContainer QPushButton, PanelContainer QGroupBox {
+    border: 1px solid #666666;
+}
+
+PanelContainer QGroupBox {
+    border-radius: 2px;
+    /* Prevent last QGroupBox from loosing its lower border */
+    margin-bottom: 1px;
+}
+
+BoldLabel {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+RevealPathLabel {
+    text-decoration: underline;
+}
+
+FieldEdit {
+    background-color: #4a4a4a;
+    padding: 2px;
+    border: 1px solid #3a3939;
+    margin: 0;
+}
+
+FieldEdit:focus {
+    color: black;
+    background-color: white;
+}
+
+FieldEdit:hover:!focus {
+    color: white;
+    background-color: #5b5b5b;
+}
+
+FieldComboBox {
+    border: 1px solid #3a3939;
+    /* Fiddling here for consistency with FieldEdit */
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+/*This margin needed only on Mac to align LHS of FieldEdit and FieldComboBox*/
+FieldComboBox[style=QMacStyle] {
+    margin-left: 3px;
+}
+
+FieldComboBox:hover {
+    color: white;
+    background-color: #5b5b5b;
+}
+
+FieldComboBox:selected {
+    color: white;
+    background: #5b5b5b;
+}
+
+FieldEdit:disabled, FieldComboBox:disabled {
+    background: #3e3e3e;
+}
+
+FieldEdit[invalid="true"], FieldComboBox[invalid="true"] {
+    color: black;
+    background: #fb9a99;
+}
+
+FieldEdit[invalid="true"]:hover, FieldEdit[invalid="true"]:focus,
+FieldComboBox[invalid="true"]:hover, FieldComboBox[invalid="true"]:focus {
+    color: black;
+    background: #fbb8b6;
+}
+
+FieldComboBox QAbstractItemView {
+    border: 1px solid #3a3939;
+}
+
+HorizontalLine {
+    border: none;
+    border-top: 1px solid #dddddd;
+}
+
+VerticalLine {
+    border: none;
+    border-left: 1px solid #dddddd;
+}
+
+Ribbon {
+}
+
+Ribbon::pane {
+    border-bottom: 1px solid #5a5a5a;;
+}
+
+Ribbon::tab-bar {
+    left: 5px;
+}
+
+Ribbon QTabBar {
+    font-size: 16pt;
+    background: #4f4f4f;
+}
+
+Ribbon QTabBar::tab {
+    min-width: 8ex;
+    padding: 4px 10px;
+    border: 1px solid #4f4f4f;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-color: #dddddd;
+
+    margin-top: 5px;
+
+    /*To prevent gaps in horizontal line*/
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+Ribbon QTabBar::tab:selected,
+Ribbon QTabBar::tab:hover {
+    color: white;
+}
+
+Ribbon QTabBar::tab:selected {
+    background: #2e2e2e;
+    margin-left: -4px;
+    margin-right: -4px;
+    border-color: #dddddd;
+    border-bottom-color: #2e2e2e;
+}
+
+Ribbon QTabBar::tab:!selected {
+    /*Non-selected tabs look smaller*/
+    margin-top: 2px;
+}
+
+Ribbon QTabBar::tab:first:selected {
+    margin-left: 0;
+}
+
+Ribbon QTabBar::tab:last:selected {
+    margin-right: 0;
+}

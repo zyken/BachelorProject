@@ -1,0 +1,17 @@
+*.py[co]
+*~
+*.egg-info/
+build/
+dist/
+.DS_Store
+.coverage
+htmlcov
+cover
+MANIFEST
+*spec
+!inselect.spec
+!read_barcodes.spec
+*tar.gz
+*dmg
+.directory
+inselect/gui/icons.py
