@@ -8,7 +8,7 @@ def prepFunc(img):
 
 datagen = ImageDataGenerator(preprocessing_function=None, rescale=1./255, horizontal_flip=True, rotation_range=90)
 labels = ['bille1', 'bille2']
-data_path = "/home/herri/Documents/bachelor/TEST"
+data_path = "../../images/augmented_images/images_genus"
 
 x = datagen.flow_from_directory(data_path, target_size=(256, 256), \
                     color_mode='rgb', class_mode='sparse',\
