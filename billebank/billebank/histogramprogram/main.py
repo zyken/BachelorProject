@@ -43,20 +43,67 @@ def getBeetlesFromCSV(path):
                     beetles.append(new_beetle)
             return beetles
 
-csvData = []
+
+def writeCsv(path, csvData):
+    with open(path, 'w') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(csvData)
+
+        csvFile.close()
+
+def getBeetleHistogramDict(tree_level):
+    dic = {}
+    for beetle in beetles:
+        current_beetle_count = 0
+        path = "../../../labeled_images/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+        while fileExists(path):
+            if getattr(beetle, tree_level) in dic:
+                dic[getattr(beetle, tree_level)] += 1
+            else:
+                dic[getattr(beetle, tree_level)] = 1
+            current_beetle_count += 1
+            path = "../../../labeled_images/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+    return dic
 
 beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
-for beetle in beetles:
-    current_beetle_count = 0
-    path = "../../../labeled_images/" + beetle.species + "_" + str(current_beetle_count) + ".jpg"
-    while fileExists(path):
-        current_beetle_count += 1
-        path = "../../../labeled_images/" + beetle.species + "_" + str(current_beetle_count) + ".jpg"
-    csvData.append([beetle.species, current_beetle_count])
 
-import csv
-with open('histogram.csv', 'w') as csvFile:
-    writer = csv.writer(csvFile)
-    writer.writerows(csvData)
+# Species
+speciesDict = getBeetleHistogramDict("species")
+csvData = []
+for k, v in speciesDict.items():
+    csvData.append([k, v])
 
-    csvFile.close()
+writeCsv('histogram-species.csv', csvData)
+
+# Genus
+genusDict = getBeetleHistogramDict("genus")
+csvData = []
+for k, v in genusDict.items():
+    csvData.append([k, v])
+
+writeCsv('histogram-genus.csv', csvData)
+
+# Tribe
+tribeDict = getBeetleHistogramDict("tribe")
+csvData = []
+for k, v in tribeDict.items():
+    csvData.append([k, v])
+
+writeCsv('histogram-tribe.csv', csvData)
+
+# Subfamily
+subfamilyDict = getBeetleHistogramDict("subfamily")
+csvData = []
+for k, v in subfamilyDict.items():
+    csvData.append([k, v])
+
+writeCsv('histogram-subfamily.csv', csvData)
+
+# Family
+familyDict = getBeetleHistogramDict("family")
+csvData = []
+for k, v in familyDict.items():
+    csvData.append([k, v])
+
+writeCsv('histogram-family.csv', csvData)
+
