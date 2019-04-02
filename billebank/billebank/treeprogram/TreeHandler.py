@@ -2,9 +2,6 @@ import os
 from shutil import copyfile
 from CSVBeetleData import getBeetlesFromCSV
 
-import re
-s = "Example String"
-
 class TreeHandler:
     def __init__(self, root_path, beetles, tree_structure):
         self.root_path = root_path
@@ -48,7 +45,7 @@ class TreeHandler:
 if __name__ == "__main__":
     tree_level = "species"
     beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
-    treeHandler = TreeHandler("../../../images/images_" + tree_level, beetles, [tree_level])
+    treeHandler = TreeHandler("../../../images/images_" + tree_level + "/train", beetles, [tree_level])
     treeHandler.moveFolder("../../../images/labeled_images")
 
 
