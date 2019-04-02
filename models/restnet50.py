@@ -6,6 +6,13 @@ from toolkit import getLabelsFromDir
 from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 
+# setup
+batch_size = 3
+steps_per_epoch = int(12525/batch_size) + 1
+validation_steps = int(3454/batch_size) + 1
+
+### Model building ####
+
 base_model = ResNet50(
             include_top=False,
             input_shape=(224, 224, 3),
@@ -43,23 +50,25 @@ val_datagen = ImageDataGenerator(rescale=1./255.)
 train_generator = train_datagen.flow_from_directory(train_dir,
                                                     classes=labels,
                                                     class_mode="categorical",
-                                                    batch_size=3,
+                                                    batch_size=batch_size,
                                                     color_mode='rgb',
                                                     target_size=(224, 224) )
 val_generator = train_datagen.flow_from_directory(val_dir,
                                                     classes=labels,
                                                     class_mode="categorical",
-                                                    batch_size=3,
+                                                    batch_size=batch_size,
                                                     color_mode='rgb',
                                                     target_size=(224, 224) )
 
 #Train
 model.fit_generator(train_generator,
-                    steps_per_epoch=12525,
-                    epochs=10,
+                    steps_per_epoch=steps_per_epoch,
+                    epochs=5,
                     validation_data=val_generator,
-                    validation_steps=3454)
+                    validation_steps=validation_steps)
 
+#save
+model.save("restnet50.h5")
 
 # #Confution Matrix and Classification Report
 # Y_pred = model.predict_generator(validation_generator, num_of_test_samples // batch_size+1)
