@@ -2,6 +2,9 @@ import os
 from shutil import copyfile
 from CSVBeetleData import getBeetlesFromCSV
 
+import re
+s = "Example String"
+
 class TreeHandler:
     def __init__(self, root_path, beetles, tree_structure):
         self.root_path = root_path
@@ -16,8 +19,9 @@ class TreeHandler:
 
     def moveFile(self, file_path):
         file_name = os.path.basename(file_path)
-        file_name = file_name.replace("_AKH", "")
-        name_without_extension = os.path.splitext(file_name)[0].replace("_", " ")
+        name_without_extension = os.path.splitext(file_name)[0]
+        dash_index = name_without_extension.find("_")
+        name_without_extension = name_without_extension[:dash_index]
         for beetle in self.beetles:
             if beetle.species.lower() == name_without_extension.lower():
                 self.moveBeetle(file_path, beetle)
@@ -42,9 +46,10 @@ class TreeHandler:
 
 
 if __name__ == "__main__":
-    beetles = getBeetlesFromCSV("../BillebankDatabase.csv")
-    treeHandler = TreeHandler("./treeImages", beetles, ["family", "subfamily", "tribe", "genus", "species"])
-    treeHandler.moveFolder("../BeetleImages")
+    tree_level = "species"
+    beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
+    treeHandler = TreeHandler("../../../images/images_" + tree_level, beetles, [tree_level])
+    treeHandler.moveFolder("../../../images/labeled_images")
 
 
 

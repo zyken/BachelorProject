@@ -35,5 +35,4 @@ def getBeetlesFromCSV(path):
                     beetles.append(new_beetle)
             return beetles
 
-beetles = getBeetlesFromCSV("../BillebankDatabase2.csv")
 
