@@ -1,0 +1,71 @@
+from keras.applications import ResNet50
+from keras.layers import Dense, GlobalAveragePooling2D
+from keras.models import Model
+from keras_preprocessing.image import ImageDataGenerator
+from toolkit import getLabelsFromDir
+from sklearn.metrics import classification_report, confusion_matrix
+import numpy as np
+
+base_model = ResNet50(
+            include_top=False,
+            input_shape=(224, 224, 3),
+            weights='imagenet')
+
+# we only train on the output layer (the fully connected layers 'predictions' below)
+base_model.trainable = False
+
+#add a new dense layer to the end of the network inplace of the old layers
+x = base_model.output
+x = GlobalAveragePooling2D()(x)
+x = Dense(1024, activation='relu')(x)
+
+# add the outplut layer
+predictions = Dense(44, activation='softmax')(x)
+
+# create new model composed of pre-trained network and new final layers
+model = Model(input=base_model.input, output=predictions)
+model.summary()
+
+# compile model
+model.compile(loss='categorical_crossentropy',
+            optimizer='sgd',
+            metrics=['accuracy'])
+
+train_dir = "../images/augmented_images/images_genus/train/"
+val_dir = "../images/augmented_images/images_genus/val/"
+
+assert(getLabelsFromDir(train_dir) == getLabelsFromDir(val_dir))
+labels = getLabelsFromDir(train_dir)
+
+train_datagen = ImageDataGenerator(rescale=1./255.)
+val_datagen = ImageDataGenerator(rescale=1./255.)
+
+train_generator = train_datagen.flow_from_directory(train_dir,
+                                                    classes=labels,
+                                                    class_mode="categorical",
+                                                    batch_size=3,
+                                                    color_mode='rgb',
+                                                    target_size=(224, 224) )
+val_generator = train_datagen.flow_from_directory(val_dir,
+                                                    classes=labels,
+                                                    class_mode="categorical",
+                                                    batch_size=3,
+                                                    color_mode='rgb',
+                                                    target_size=(224, 224) )
+
+#Train
+model.fit_generator(train_generator,
+                    steps_per_epoch=12525,
+                    epochs=10,
+                    validation_data=val_generator,
+                    validation_steps=3454)
+
+
+# #Confution Matrix and Classification Report
+# Y_pred = model.predict_generator(validation_generator, num_of_test_samples // batch_size+1)
+# y_pred = np.argmax(Y_pred, axis=1)
+# print('Confusion Matrix')
+# print(confusion_matrix(validation_generator.classes, y_pred))
+# print('Classification Report')
+# target_names = ['Cats', 'Dogs', 'Horse']
+# print(classification_report(validation_generator.classes, y_pred, target_names=target_names))
