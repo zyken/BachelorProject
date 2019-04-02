@@ -1,6 +1,6 @@
 import os
 
-def getLabels(directory):
+def getLabelsFromDir(directory):
     """
     return list of names of subdirectories
     e.g. ["subdir1", "subdir2", "subdir3"]
