@@ -1,14 +1,13 @@
 import csv
 
 class CSVBeetleData(object):
-    def __init__(self, species, genus, tribe, subfamily, family, crops, synonym=""):
+    def __init__(self, species, genus, tribe, subfamily, family, synonym=""):
         self.species = species
         self.genus = genus
         self.tribe = tribe
         self.subfamily = subfamily
         self.family = family
         self.synonym = synonym
-        self.crops = crops
 
 
     @staticmethod
@@ -20,12 +19,8 @@ class CSVBeetleData(object):
             subfamily = row_array[3]
             family = row_array[4]
             synonym = row_array[13]
-            crops = []
-            for i in range(14, 24):
-                if row_array[i] != "":
-                    crops.append(row_array[i])
 
-            return CSVBeetleData(species, genus, tribe, subfamily, family, crops, synonym)
+            return CSVBeetleData(species, genus, tribe, subfamily, family, synonym)
         else:
             return None
 
