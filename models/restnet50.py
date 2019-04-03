@@ -18,9 +18,6 @@ base_model = ResNet50(
             input_shape=(224, 224, 3),
             weights='imagenet')
 
-# we only train on the output layer (the fully connected layers 'predictions' below)
-base_model.trainable = False
-
 #add a new dense layer to the end of the network inplace of the old layers
 x = base_model.output
 x = GlobalAveragePooling2D()(x)
@@ -31,6 +28,11 @@ predictions = Dense(44, activation='softmax')(x)
 
 # create new model composed of pre-trained network and new final layers
 model = Model(input=base_model.input, output=predictions)
+
+# we only train on the fully connected layers (the last two layers)
+for layer in model.layers[:-2]:
+    layer.trainable = False
+
 model.summary()
 
 # compile model
@@ -70,11 +72,11 @@ model.fit_generator(train_generator,
 #save
 model.save("restnet50.h5")
 
-# #Confution Matrix and Classification Report
-# Y_pred = model.predict_generator(validation_generator, num_of_test_samples // batch_size+1)
-# y_pred = np.argmax(Y_pred, axis=1)
-# print('Confusion Matrix')
-# print(confusion_matrix(validation_generator.classes, y_pred))
-# print('Classification Report')
-# target_names = ['Cats', 'Dogs', 'Horse']
-# print(classification_report(validation_generator.classes, y_pred, target_names=target_names))
+#Confution Matrix and Classification Report
+Y_pred = model.predict_generator(val_generator, steps=validation_steps)
+y_pred = np.argmax(Y_pred, axis=1)
+print('Confusion Matrix')
+print(confusion_matrix(val_generator.classes, y_pred))
+print('Classification Report')
+target_names = ['Cats', 'Dogs', 'Horse']
+print(classification_report(val_generator.classes, y_pred, target_names=target_names))
