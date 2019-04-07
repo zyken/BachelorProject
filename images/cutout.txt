@@ -1,0 +1,14 @@
+cutout.
+species containing less than 10 images 
+
+and:
+
+lathrobium longulum: (132 train images) 
+    in  subfam: Paederinae (4041 train images)
+    in  tribe: Paederini (4041 train images)
+    in  genus: Lathrobium (1161 train images)
+
+philonthus umbratilis: (130 train images)
+    in  subfam: Staphylininae (8484 train images)
+    in  tribe: Staphylinini (7590 train images)
+    in  genus: Philonthus (3243 train images)
