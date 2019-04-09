@@ -1,0 +1,8 @@
+folder contains 2 experiments on model /models/resNet50_pretrained/restnet50pretrained.h5
+	* experiment predict_noBackground: try to predict images without background
+	* expreiment predict_noBeetles: try to predict images with only backout
+result for each experiment is in respecive .csv files
+
+folder contains images folder val_segmented which contains two subfolders, val_images with only backgrounds and val_images with only beetles
+
+
