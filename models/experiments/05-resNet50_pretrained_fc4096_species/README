@@ -1,2 +1,1 @@
 Experiment of resNet50 with pretrained imagenet weights on Genus level.
-Adam optimizer with 0.01 lr
