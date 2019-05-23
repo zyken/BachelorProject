@@ -55,20 +55,27 @@ def getBeetleHistogramDict(tree_level):
     dic = {}
     for beetle in beetles:
         current_beetle_count = 0
-        path = "../../../labeled_images/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+        path = "../../../images/labeled_val/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+
+        # The count might not start at 0 - This is a stupid way of getting the right count :-)
+        while not fileExists(path) and current_beetle_count < 5000:
+            current_beetle_count += 1
+            path = "../../../images/labeled_val/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+
         while fileExists(path):
             if getattr(beetle, tree_level) in dic:
                 dic[getattr(beetle, tree_level)] += 1
             else:
                 dic[getattr(beetle, tree_level)] = 1
             current_beetle_count += 1
-            path = "../../../labeled_images/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
+            path = "../../../images/labeled_val/" + getattr(beetle, "species") + "_" + str(current_beetle_count) + ".jpg"
     return dic
 
 beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
 
 # Species
 speciesDict = getBeetleHistogramDict("species")
+
 csvData = []
 for k, v in speciesDict.items():
     csvData.append([k, v])
