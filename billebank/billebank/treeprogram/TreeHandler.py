@@ -43,16 +43,16 @@ class TreeHandler:
 
 
 if __name__ == "__main__":
-    """
-    tree_level = "subfamily"
+
+    tree_level = "species"
     beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
-    treeHandler = TreeHandler("../../../images/images_" + tree_level + "/train", beetles, [tree_level])
-    treeHandler.moveFolder("../../../images/labeled_images")
-    """
-    tree_level = "subfamily"
+    treeHandler = TreeHandler("../../../images/images_" + tree_level + "_shuffled/train", beetles, [tree_level])
+    treeHandler.moveFolder("../../../images/shuffled_train")
+
+    tree_level = "species"
     beetles = getBeetlesFromCSV("../excel/BillebankDatabase2.csv")
-    treeHandler = TreeHandler("../../../images/images_" + tree_level + "/val", beetles, [tree_level])
-    treeHandler.moveFolder("../../../images/labeled_val")
+    treeHandler = TreeHandler("../../../images/images_" + tree_level + "_shuffled/val", beetles, [tree_level])
+    treeHandler.moveFolder("../../../images/shuffled_val")
 
 
 
