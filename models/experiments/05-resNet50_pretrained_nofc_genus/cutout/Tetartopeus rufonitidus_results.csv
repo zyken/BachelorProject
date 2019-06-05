@@ -1,0 +1,9 @@
+predicted_genus,real_species,correct_prediction,real_genus,filepath
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_0.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_1.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_2.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_3.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_4.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_5.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_6.jpg
+Tetartopeus,Tetartopeus rufonitidus,True,Tetartopeus,../../../images/cutout_species/Tetartopeus rufonitidus/Tetartopeus rufonitidus_7.jpg

@@ -1,0 +1,2 @@
+predicted_genus,real_species,correct_prediction,real_genus,filepath
+Rugilus,Rugilus geniculatus,True,Rugilus,../../../images/cutout_species/Rugilus geniculatus/Rugilus geniculatus_0.jpg

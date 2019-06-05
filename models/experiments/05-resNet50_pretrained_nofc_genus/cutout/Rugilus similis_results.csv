@@ -1,0 +1,10 @@
+predicted_genus,real_species,correct_prediction,real_genus,filepath
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_0.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_1.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_2.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_3.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_4.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_5.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_6.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_7.jpg
+Rugilus,Rugilus similis,True,Rugilus,../../../images/cutout_species/Rugilus similis/Rugilus similis_8.jpg

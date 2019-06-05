@@ -1,0 +1,9 @@
+predicted_genus,real_species,correct_prediction,real_genus,filepath
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_0.jpg
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_1.jpg
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_2.jpg
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_3.jpg
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_4.jpg
+Tasgius,Tasgius pedator,True,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_5.jpg
+Ocypus,Tasgius pedator,False,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_6.jpg
+Ocypus,Tasgius pedator,False,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_7.jpg
