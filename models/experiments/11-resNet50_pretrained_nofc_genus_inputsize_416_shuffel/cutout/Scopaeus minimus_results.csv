@@ -1,0 +1,9 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Astenus,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_5.jpg,False,Scopaeus minimus
+Scopaeus,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_7.jpg,True,Scopaeus minimus
+Scopaeus,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_0.jpg,True,Scopaeus minimus
+Quedius,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_6.jpg,False,Scopaeus minimus
+Medon,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_3.jpg,False,Scopaeus minimus
+Lathrobium,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_4.jpg,False,Scopaeus minimus
+Astenus,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_1.jpg,False,Scopaeus minimus
+Neobisnius,Scopaeus,../../../images/cutout_species/Scopaeus minimus/Scopaeus minimus_2.jpg,False,Scopaeus minimus

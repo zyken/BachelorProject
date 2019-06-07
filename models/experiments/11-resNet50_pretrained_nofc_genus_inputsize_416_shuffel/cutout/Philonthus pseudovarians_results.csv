@@ -1,0 +1,3 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Philonthus,Philonthus,../../../images/cutout_species/Philonthus pseudovarians/Philonthus pseudovarians_0.jpg,True,Philonthus pseudovarians
+Philonthus,Philonthus,../../../images/cutout_species/Philonthus pseudovarians/Philonthus pseudovarians_1.jpg,True,Philonthus pseudovarians

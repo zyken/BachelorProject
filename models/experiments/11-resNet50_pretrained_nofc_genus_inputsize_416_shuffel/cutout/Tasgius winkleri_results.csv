@@ -1,0 +1,10 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_0.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_7.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_4.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_1.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_5.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_6.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_3.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_2.jpg,True,Tasgius winkleri
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius winkleri/Tasgius winkleri_8.jpg,True,Tasgius winkleri

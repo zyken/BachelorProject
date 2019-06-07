@@ -1,0 +1,7 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Neobisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_0.jpg,True,Neobisnius procerulus
+Neobisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_1.jpg,True,Neobisnius procerulus
+Bisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_3.jpg,False,Neobisnius procerulus
+Neobisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_4.jpg,True,Neobisnius procerulus
+Bisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_5.jpg,False,Neobisnius procerulus
+Neobisnius,Neobisnius,../../../images/cutout_species/Neobisnius procerulus/Neobisnius procerulus_2.jpg,True,Neobisnius procerulus

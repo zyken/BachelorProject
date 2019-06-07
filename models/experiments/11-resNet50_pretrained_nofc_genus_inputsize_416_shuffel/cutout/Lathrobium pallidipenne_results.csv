@@ -1,0 +1,4 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Lathrobium,Lathrobium,../../../images/cutout_species/Lathrobium pallidipenne/Lathrobium pallidipenne_2.jpg,True,Lathrobium pallidipenne
+Lathrobium,Lathrobium,../../../images/cutout_species/Lathrobium pallidipenne/Lathrobium pallidipenne_0.jpg,True,Lathrobium pallidipenne
+Lathrobium,Lathrobium,../../../images/cutout_species/Lathrobium pallidipenne/Lathrobium pallidipenne_1.jpg,True,Lathrobium pallidipenne

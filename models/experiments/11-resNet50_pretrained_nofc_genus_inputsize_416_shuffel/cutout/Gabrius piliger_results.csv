@@ -1,0 +1,8 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_0.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_5.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_6.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_4.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_2.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_3.jpg,False,Gabrius piliger
+Bisnius,Gabrius,../../../images/cutout_species/Gabrius piliger/Gabrius piliger_1.jpg,False,Gabrius piliger
