@@ -1,0 +1,7 @@
+correct_prediction,predicted_genus,real_species,real_genus,filepath
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_3.jpg
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_4.jpg
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_1.jpg
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_2.jpg
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_0.jpg
+True,Philonthus,Philonthus spinipes,Philonthus,../../../images/cutout_416_aspect_images_species/val/Philonthus spinipes/Philonthus spinipes_5.jpg

@@ -1,0 +1,10 @@
+correct_prediction,predicted_genus,real_species,real_genus,filepath
+True,Platydracus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_3.jpg
+False,Staphylinus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_4.jpg
+False,Staphylinus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_6.jpg
+True,Platydracus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_2.jpg
+False,Staphylinus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_7.jpg
+True,Platydracus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_1.jpg
+False,Staphylinus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_5.jpg
+True,Platydracus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_0.jpg
+False,Staphylinus,Platydracus chalcocephalus,Platydracus,../../../images/cutout_416_aspect_images_species/val/Platydracus chalcocephalus/Platydracus chalcocephalus_8.jpg

@@ -1,0 +1,7 @@
+correct_prediction,predicted_genus,real_species,real_genus,filepath
+False,Rugilus,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_1.jpg
+False,Lobrathium,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_3.jpg
+True,Lathrobium,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_5.jpg
+True,Lathrobium,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_2.jpg
+True,Lathrobium,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_0.jpg
+True,Lathrobium,Lathrobium castaneipenne,Lathrobium,../../../images/cutout_416_aspect_images_species/val/Lathrobium castaneipenne/Lathrobium castaneipenne_4.jpg

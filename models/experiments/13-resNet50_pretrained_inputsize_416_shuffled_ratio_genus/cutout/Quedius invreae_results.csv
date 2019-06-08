@@ -1,0 +1,10 @@
+correct_prediction,predicted_genus,real_species,real_genus,filepath
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_3.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_5.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_6.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_4.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_0.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_7.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_1.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_2.jpg
+True,Quedius,Quedius invreae,Quedius,../../../images/cutout_416_aspect_images_species/val/Quedius invreae/Quedius invreae_8.jpg
