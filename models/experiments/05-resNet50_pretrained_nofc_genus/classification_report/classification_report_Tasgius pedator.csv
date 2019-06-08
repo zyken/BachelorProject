@@ -1,0 +1,3 @@
+class,f1_score,precision,recall,support
+Ocypus,0.0,0.0,0.0,0.0
+Tasgius,0.86,1.0,0.75,8.0
