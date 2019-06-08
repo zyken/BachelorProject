@@ -1,0 +1,7 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_4.jpg,True,Bisnius nigriventris
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_0.jpg,True,Bisnius nigriventris
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_1.jpg,True,Bisnius nigriventris
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_3.jpg,True,Bisnius nigriventris
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_5.jpg,True,Bisnius nigriventris
+Bisnius,Bisnius,../../../images/cutout_species/Bisnius nigriventris/Bisnius nigriventris_2.jpg,True,Bisnius nigriventris

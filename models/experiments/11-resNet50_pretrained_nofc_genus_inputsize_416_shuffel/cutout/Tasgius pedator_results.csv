@@ -1,0 +1,9 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Platydracus,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_7.jpg,False,Tasgius pedator
+Platydracus,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_0.jpg,False,Tasgius pedator
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_1.jpg,True,Tasgius pedator
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_3.jpg,True,Tasgius pedator
+Ocypus,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_6.jpg,False,Tasgius pedator
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_5.jpg,True,Tasgius pedator
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_4.jpg,True,Tasgius pedator
+Tasgius,Tasgius,../../../images/cutout_species/Tasgius pedator/Tasgius pedator_2.jpg,True,Tasgius pedator

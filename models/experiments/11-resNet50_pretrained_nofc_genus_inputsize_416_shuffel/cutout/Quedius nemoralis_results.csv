@@ -1,0 +1,10 @@
+predicted_genus,real_genus,filepath,correct_prediction,real_species
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_3.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_5.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_7.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_1.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_2.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_8.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_4.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_0.jpg,True,Quedius nemoralis
+Quedius,Quedius,../../../images/cutout_species/Quedius nemoralis/Quedius nemoralis_6.jpg,True,Quedius nemoralis
